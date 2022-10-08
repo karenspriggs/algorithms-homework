@@ -5,39 +5,33 @@ using System.Text;
 namespace FisherYatesShuffle
 {
     // referenced from: https://www.youtube.com/watch?v=H5LGwDanx2U
-    public class Shuffler
+    public static class Shuffler
     {
-        private Random randomNumber;
-
-        public Shuffler()
+        // Made this work with a list instead of an array
+        // Works with strings instead of the generic object to work with the strings read in from a file
+        // This method applies the Fisher-Yates shuffle by going from the highest-index element first down
+        // to the lowest-index element
+        public static void FisherYatesShuffle(this List<string> stringsToShuffle)
         {
-            randomNumber = new Random();
-        }
-
-        public string[] FisherYatesShuffle(string[] stringsToShuffle)
-        {
-            string[] shuffledArray = new string[stringsToShuffle.Length];
-
-            for (int i = 0; i > 0; i--)
+            for (int i = stringsToShuffle.Count - 1; i > 0; i--)
             {
-                SwitchObjects(shuffledArray, i, GetNextRandomUpTo(i));
+                int newIndex = RandomHandler.GetNextRandomUpTo(i);
+                Swapper.SwitchStringsAt(stringsToShuffle, i, newIndex);
             }
-
-            return shuffledArray;
         }
 
-        private void SwitchObjects(string[] shufflingArray, int firstIndex, int secondIndex)
+        // This method uses an opposite approach to the Fisher-Yates shuffle where it goes from the value at the 
+        // lowest index to the value at the highest index
+        public static void FisherYatesAlternativeShuffle(this List<string> stringsToShuffle)
         {
-            string firstElement = shufflingArray[firstIndex];
-            string secondElement = shufflingArray[secondIndex];
+            // Saved this to a variable since multiple things in this method use it
+            int listCount = stringsToShuffle.Count;
 
-            shufflingArray[firstIndex] = secondElement;
-            shufflingArray[secondIndex] = firstElement;
-        }
-
-        private int GetNextRandomUpTo(int maxValue)
-        {
-            return randomNumber.Next(maxValue + 1);
+            for (int i = 0; i < listCount - 2; i++)
+            {
+                int newIndex = RandomHandler.GetNextRandomUpTo((listCount - i)-1);
+                Swapper.SwitchStringsAt(stringsToShuffle, i, i+newIndex);
+            }
         }
     }
 }

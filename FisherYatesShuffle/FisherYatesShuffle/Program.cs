@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace FisherYatesShuffle
 {
@@ -6,7 +7,19 @@ namespace FisherYatesShuffle
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            FileReader.fileName = "data.txt";
+            List<string> itemsToShuffle = FileReader.ReadDataFromFile();
+
+            Shuffler.FisherYatesAlternativeShuffle(itemsToShuffle);
+
+            Console.WriteLine("Shuffled items:\n");
+
+            foreach(string str in itemsToShuffle)
+            {
+                Console.WriteLine(str);
+            }
+
+            Console.ReadKey();
         }
     }
 }

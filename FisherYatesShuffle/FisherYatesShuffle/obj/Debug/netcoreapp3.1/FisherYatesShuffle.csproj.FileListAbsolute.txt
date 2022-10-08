@@ -1,0 +1,14 @@
+C:\Users\Admin\Downloads\algorithms-homework\FisherYatesShuffle\FisherYatesShuffle\bin\Debug\netcoreapp3.1\FisherYatesShuffle.exe
+C:\Users\Admin\Downloads\algorithms-homework\FisherYatesShuffle\FisherYatesShuffle\bin\Debug\netcoreapp3.1\FisherYatesShuffle.deps.json
+C:\Users\Admin\Downloads\algorithms-homework\FisherYatesShuffle\FisherYatesShuffle\bin\Debug\netcoreapp3.1\FisherYatesShuffle.runtimeconfig.json
+C:\Users\Admin\Downloads\algorithms-homework\FisherYatesShuffle\FisherYatesShuffle\bin\Debug\netcoreapp3.1\FisherYatesShuffle.runtimeconfig.dev.json
+C:\Users\Admin\Downloads\algorithms-homework\FisherYatesShuffle\FisherYatesShuffle\bin\Debug\netcoreapp3.1\FisherYatesShuffle.dll
+C:\Users\Admin\Downloads\algorithms-homework\FisherYatesShuffle\FisherYatesShuffle\bin\Debug\netcoreapp3.1\FisherYatesShuffle.pdb
+C:\Users\Admin\Downloads\algorithms-homework\FisherYatesShuffle\FisherYatesShuffle\obj\Debug\netcoreapp3.1\FisherYatesShuffle.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\algorithms-homework\FisherYatesShuffle\FisherYatesShuffle\obj\Debug\netcoreapp3.1\FisherYatesShuffle.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Downloads\algorithms-homework\FisherYatesShuffle\FisherYatesShuffle\obj\Debug\netcoreapp3.1\FisherYatesShuffle.AssemblyInfoInputs.cache
+C:\Users\Admin\Downloads\algorithms-homework\FisherYatesShuffle\FisherYatesShuffle\obj\Debug\netcoreapp3.1\FisherYatesShuffle.AssemblyInfo.cs
+C:\Users\Admin\Downloads\algorithms-homework\FisherYatesShuffle\FisherYatesShuffle\obj\Debug\netcoreapp3.1\FisherYatesShuffle.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\algorithms-homework\FisherYatesShuffle\FisherYatesShuffle\obj\Debug\netcoreapp3.1\FisherYatesShuffle.dll
+C:\Users\Admin\Downloads\algorithms-homework\FisherYatesShuffle\FisherYatesShuffle\obj\Debug\netcoreapp3.1\FisherYatesShuffle.pdb
+C:\Users\Admin\Downloads\algorithms-homework\FisherYatesShuffle\FisherYatesShuffle\obj\Debug\netcoreapp3.1\FisherYatesShuffle.genruntimeconfig.cache
