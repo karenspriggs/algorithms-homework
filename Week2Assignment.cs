@@ -29,7 +29,7 @@ public int ReturnSumOfIntegerArray(int[] elements){
 // data set squared. 
 public void ProductsOfAllElements(int[] elements){
     foreach(var firstFactor in elements){
-        foreach (var secondFactor in elements){
+        foreach (var secondFactor cfcin elements){
             Console.WriteLine($"The product of {firstFactor} and {secondFactor} is {firstFactor * secondFactor}");
         }
     }
