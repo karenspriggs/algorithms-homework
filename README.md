@@ -6,4 +6,4 @@ This week I demonstrated an understanding of the Big O Notation and how it relat
 This week I learned about the Fisher-Yates shuffle by creating an application that utilizes it. This application reads in lines from a text file and then uses one of two possible versions of the Fisher-Yates shuffle to create a new random permutation of those elements. The Visual Studio project containing the application can be found in the following space [in this repo](https://github.com/karenspriggs/algorithms-homework/tree/main/FisherYatesShuffle).
 
 ### Week 8:
-This week I learned about different data structures, including arrays, maps, queues, and stacks.
+This week I learned about different data structures, including arrays, maps, queues, and stacks. I did so by creating an application that reads in data from a text file and stores it in instances of all four of those different data structures. I also included comments that explain what each data structure does, how it works, what the pros and cons are, and how they can be used. This application can be found in the following space [in this repo](https://github.com/karenspriggs/algorithms-homework/tree/main/DataStructureDemo)
