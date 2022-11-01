@@ -9,3 +9,5 @@ An algorithm with a complexity of O(n) has a linear relationship between the siz
 
 ### O(n^2)
 An algorithm with a complexity of O(n) has an exponential relationship between the size of the data set and the amount of resources needed to run it.
+
+Depending on what an algorithm does, it can have different best case and worse case big O notation complexity levels.
