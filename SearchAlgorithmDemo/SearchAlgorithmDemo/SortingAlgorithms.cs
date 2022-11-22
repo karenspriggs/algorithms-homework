@@ -38,9 +38,15 @@ namespace SearchAlgorithmDemo
         }
 
         // Selection sort has an average and worst case complexity of O(n^2) and a best case of O(n)
+        // It is bad with longer lists and more inefficient than insertion sort
+        // It finds the smallest item out of the non sorted elements and swaps it with the element
+        // after the latest element that was sorted
         public static void SelectionSort(int[] data)
         {
+            for (int i = 0; i < data.Length; i++)
+            {
 
+            }
         }
 
         // Heap sort has an average complexity of O(n log n) 
