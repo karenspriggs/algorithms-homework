@@ -26,14 +26,31 @@ namespace SearchAlgorithmDemo
             return data.Length + 1;
         }
 
-        // Binary search has a best case complexity of O(log n) and a worst case of O(n)
+        // Binary search has a worst case complexity of O(log n) and a best case of O(1)
         // It requires the data set to be sorted prior to the search
         // It checks the middle element of the data set, and then determines if the value it is looking for
         // is greater or less than the middle element and then looks at that half of the set only
-        // It does this recursively until it finds the value it is looking for
+        // It does this recursively/iteratively until it finds the value it is looking for
         public static int BinarySearch(int _valueToFind)
         {
-            return 0;
+            int lowIndex = 0;
+            int highIndex = 0;
+            int midIndex = 0;
+
+            while (lowIndex != highIndex)
+            {
+                midIndex = ((lowIndex + highIndex) / 2);
+
+                if (_valueToFind > data[midIndex])
+                {
+                    lowIndex = midIndex + 1;
+                } else
+                {
+                    highIndex = midIndex - 1;
+                }
+            }
+
+            return lowIndex;
         }
 
         // Interpolation search has a best case complexity of O(log log n) and a worst case of O(n)
