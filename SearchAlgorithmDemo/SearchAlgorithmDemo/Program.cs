@@ -10,9 +10,13 @@ namespace SearchAlgorithmDemo
         static void Main(string[] args)
         {
             FileReader.fileName = "scores.txt";
-            SearchingAlgorithms.data = FileReader.ReadDataFromFileToArray();
+            int[] dataArray = FileReader.ReadDataFromFileToArray();
 
-
+            SortingAlgorithms.BubbleSort(dataArray);
+            SortingAlgorithms.InsertionSort(dataArray);
+            SortingAlgorithms.SelectionSort(dataArray);
+            SortingAlgorithms.HeapSort(dataArray);
+            SortingAlgorithms.QuickSort(dataArray, 0, dataArray.Length-1);
         }
     }
 
