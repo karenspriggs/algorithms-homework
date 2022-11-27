@@ -12,6 +12,8 @@ namespace SearchAlgorithmDemo
         // The outer loop always runs n times
         public static void BubbleSort(int[] data)
         {
+            var timer = System.Diagnostics.Stopwatch.StartNew();
+
             for (int i = 0; i < data.Length; i++)
             {
                 for (int j = i + 1; j < data.Length; j++)
@@ -24,6 +26,8 @@ namespace SearchAlgorithmDemo
                     }
                 }
             }
+
+            Console.WriteLine($"Bubble sort took {timer.ElapsedMilliseconds} milliseconds to finish");
         }
 
         // Insertion sort has a worse case complexity of O(n^2) and a best case of O(n)
@@ -33,6 +37,8 @@ namespace SearchAlgorithmDemo
         // 
         public static void InsertionSort(int[] data)
         {
+            var timer = System.Diagnostics.Stopwatch.StartNew();
+
             for (int i = 0; i < data.Length - 1; i++)
             {
                 for (int j = i - 1; j > 0; j--)
@@ -48,6 +54,8 @@ namespace SearchAlgorithmDemo
                     }
                 }
             }
+
+            Console.WriteLine($"Insertion sort took {timer.ElapsedMilliseconds} milliseconds to finish");
         }
 
         // Selection sort has an average and worst case complexity of O(n^2) and a best case of O(n)
@@ -57,6 +65,8 @@ namespace SearchAlgorithmDemo
         // In my example I am finding the smallest element out of the non sorted elements
         public static void SelectionSort(int[] data)
         {
+            var timer = System.Diagnostics.Stopwatch.StartNew();
+
             for (int i = 0; i < data.Length; i++)
             {
                 int currentMinimum = data[i];
@@ -78,6 +88,9 @@ namespace SearchAlgorithmDemo
                     data[minimumIndex] = tempvalue;
                 }
             }
+
+            Console.WriteLine($"Selection sort took {timer.ElapsedMilliseconds} milliseconds to finish");
+
         }
 
         // Heap sort has an average complexity of O(n log n) 
@@ -87,6 +100,8 @@ namespace SearchAlgorithmDemo
         // Implementation is referenced from : https://www.geeksforgeeks.org/heap-sort/
         public static void HeapSort(int[] data)
         {
+            var timer = System.Diagnostics.Stopwatch.StartNew();
+
             //Build the max heap
             for (int i = data.Length / 2 - 1; i >= 0; i--)
             {
@@ -101,6 +116,8 @@ namespace SearchAlgorithmDemo
 
                 Heapify(data, i, 0);
             }
+
+            Console.WriteLine($"Heap sort took {timer.ElapsedMilliseconds} milliseconds to finish");
         }
 
         public static void Heapify(int[] data, int size, int i)
@@ -140,6 +157,8 @@ namespace SearchAlgorithmDemo
         // Referenced from: https://www.geeksforgeeks.org/quick-sort/
         public static void QuickSort(int[] data, int lowvalue, int highvalue)
         {
+            var timer = System.Diagnostics.Stopwatch.StartNew();
+
             if (lowvalue < highvalue)
             {
                 int pivotIndex = PickPivot(data, lowvalue, highvalue);
@@ -147,6 +166,8 @@ namespace SearchAlgorithmDemo
                 QuickSort(data, lowvalue, pivotIndex - 1);
                 QuickSort(data, pivotIndex + 1, highvalue);
             }
+
+            Console.WriteLine($"Quick sort took {timer.ElapsedMilliseconds} milliseconds to finish");
         }
 
         public static int PickPivot(int[] data, int lowvalue, int highvalue)
@@ -166,7 +187,7 @@ namespace SearchAlgorithmDemo
                 }
             }
 
-            int newtempvalue = data[smallindex+1];
+            int newtempvalue = data[smallindex + 1];
             data[smallindex + 1] = data[highvalue];
             data[highvalue] = newtempvalue;
 
@@ -174,9 +195,81 @@ namespace SearchAlgorithmDemo
         }
 
         // Merge sort has an average complexity of O(n log n) 
-        public static void MergeSort(int[] data)
+        // It also uses a divide and conquer strategy, which works by splitting an array into two equally
+        // sized halves, sorting those, and then merges the two sorted halves to then sort
+        // By using recursion, this strategy is used to sort the entire array
+        // Referenced from: https://www.geeksforgeeks.org/merge-sort/
+        public static void MergeSort(int[] data, int lowIndex, int highIndex)
         {
+            var timer = System.Diagnostics.Stopwatch.StartNew();
 
+            if (lowIndex < highIndex)
+            {
+                int middleIndex = (lowIndex + (highIndex - 1)) / 2;
+
+                MergeSort(data, lowIndex, middleIndex);
+                MergeSort(data, middleIndex + 1, highIndex);
+
+                Merge(data, lowIndex, middleIndex, highIndex);
+            }
+
+
+            Console.WriteLine($"Merge sort took {timer.ElapsedMilliseconds} milliseconds to finish");
+        }
+
+        public static void Merge(int[] data, int lowIndex, int middleIndex, int highIndex)
+        {
+            int leftArraySize = (middleIndex - lowIndex) + 1;
+            int rightArraySize = (highIndex - middleIndex);
+
+            int[] leftArray = new int[leftArraySize];
+            int[] rightArray = new int[rightArraySize];
+
+            int i;
+            int j;
+
+            for (i = 0; i < leftArraySize; i++)
+            {
+                leftArray[i] = data[lowIndex + i];
+            }
+
+            for (j = 0; j < rightArraySize; j++)
+            {
+                rightArray[j] = data[middleIndex + 1 + j];
+            }
+
+            i = 0;
+            j = 0;
+
+            int k = lowIndex;
+
+            while (i < leftArraySize && j < rightArraySize)
+            {
+                if (leftArray[i] <= rightArray[j])
+                {
+                    data[k] = leftArray[i];
+                    i++;
+                } else
+                {
+                    data[k] = rightArray[j];
+                    j++;
+                }
+                k++;
+            }
+
+            while (i < leftArraySize)
+            {
+                data[k] = leftArray[i];
+                i++;
+                k++;
+            }
+
+            while (j < rightArraySize)
+            {
+                data[k] = rightArray[j];
+                j++;
+                k++;
+            }
         }
     }
 }

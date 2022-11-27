@@ -1,0 +1,14 @@
+C:\Users\Admin\Downloads\algorithms-homework\SearchAlgorithmDemo\SearchAlgorithmDemo\bin\Debug\netcoreapp3.1\SearchAlgorithmDemo.exe
+C:\Users\Admin\Downloads\algorithms-homework\SearchAlgorithmDemo\SearchAlgorithmDemo\bin\Debug\netcoreapp3.1\SearchAlgorithmDemo.deps.json
+C:\Users\Admin\Downloads\algorithms-homework\SearchAlgorithmDemo\SearchAlgorithmDemo\bin\Debug\netcoreapp3.1\SearchAlgorithmDemo.runtimeconfig.json
+C:\Users\Admin\Downloads\algorithms-homework\SearchAlgorithmDemo\SearchAlgorithmDemo\bin\Debug\netcoreapp3.1\SearchAlgorithmDemo.runtimeconfig.dev.json
+C:\Users\Admin\Downloads\algorithms-homework\SearchAlgorithmDemo\SearchAlgorithmDemo\bin\Debug\netcoreapp3.1\SearchAlgorithmDemo.dll
+C:\Users\Admin\Downloads\algorithms-homework\SearchAlgorithmDemo\SearchAlgorithmDemo\bin\Debug\netcoreapp3.1\SearchAlgorithmDemo.pdb
+C:\Users\Admin\Downloads\algorithms-homework\SearchAlgorithmDemo\SearchAlgorithmDemo\obj\Debug\netcoreapp3.1\SearchAlgorithmDemo.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\algorithms-homework\SearchAlgorithmDemo\SearchAlgorithmDemo\obj\Debug\netcoreapp3.1\SearchAlgorithmDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Downloads\algorithms-homework\SearchAlgorithmDemo\SearchAlgorithmDemo\obj\Debug\netcoreapp3.1\SearchAlgorithmDemo.AssemblyInfoInputs.cache
+C:\Users\Admin\Downloads\algorithms-homework\SearchAlgorithmDemo\SearchAlgorithmDemo\obj\Debug\netcoreapp3.1\SearchAlgorithmDemo.AssemblyInfo.cs
+C:\Users\Admin\Downloads\algorithms-homework\SearchAlgorithmDemo\SearchAlgorithmDemo\obj\Debug\netcoreapp3.1\SearchAlgorithmDemo.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\algorithms-homework\SearchAlgorithmDemo\SearchAlgorithmDemo\obj\Debug\netcoreapp3.1\SearchAlgorithmDemo.dll
+C:\Users\Admin\Downloads\algorithms-homework\SearchAlgorithmDemo\SearchAlgorithmDemo\obj\Debug\netcoreapp3.1\SearchAlgorithmDemo.pdb
+C:\Users\Admin\Downloads\algorithms-homework\SearchAlgorithmDemo\SearchAlgorithmDemo\obj\Debug\netcoreapp3.1\SearchAlgorithmDemo.genruntimeconfig.cache
