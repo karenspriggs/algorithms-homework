@@ -19,6 +19,10 @@ namespace SearchAlgorithmDemo
             SortingAlgorithms.QuickSort(dataArray, 0, dataArray.Length-1);
             SortingAlgorithms.MergeSort(dataArray, 0, dataArray.Length - 1);
 
+            SearchingAlgorithms.LinearSearch(100);
+            SearchingAlgorithms.BinarySearch(100);
+            SearchingAlgorithms.InterpolationSearch(100);
+
             Console.ReadKey();
         }
     }
