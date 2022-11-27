@@ -127,7 +127,27 @@ Heapsort(Data: values[])
 I learned about three different sorting algorithms in week 12:
 
 **Linear**
-
+````
+Begin
+1) Set i = 0
+2) If Li = T, go to line 4
+3) Increase i by 1 and go to line 2
+4) If i < n then return i
+End
+````
 **Binary**
-
+````
+function binary_search(A, n, T) is
+    L := 0
+    R := n − 1
+    while L ≤ R do
+        m := floor((L + R) / 2)
+        if A[m] < T then
+            L := m + 1
+        else if A[m] > T then
+            R := m − 1
+        else:
+            return m
+    return unsuccessful
+````
 **Interpolation**
