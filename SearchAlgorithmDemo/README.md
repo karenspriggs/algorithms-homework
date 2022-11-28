@@ -127,7 +127,7 @@ Heapsort(Data: values[])
 ## Searching
 I learned about three different sorting algorithms in week 12:
 
-**Linear**
+**Linear Search Psuedocode**
 ````
 Begin
 1) Set i = 0
@@ -136,7 +136,7 @@ Begin
 4) If i < n then return i
 End
 ````
-**Binary**
+**Binary Search Psuedocode**
 ````
 function binary_search(A, n, T) is
     L := 0
@@ -151,4 +151,13 @@ function binary_search(A, n, T) is
             return m
     return unsuccessful
 ````
-**Interpolation**
+**Interpolation Search Psuedocode**
+````
+InterpolationSearch(data[], searchtarget, lowindex, highindex)
+1) See if data[lowindex+highindex/2] = searchtarget
+2) If it is a match, return that middle index
+3) If it is not a match, use the probe position equation to make a key
+4) Divide the list using the probing key and find the new middle
+5) If the search target is greater than middle, search in higher sub-list.
+6) If search target is smaller than middle, search in lower sub-list.
+7) Recursively repeat until a match is found, return index
