@@ -3,6 +3,7 @@ In weeks 11 and 12, I learned about searching and sorting algorithms. Since some
 
 ## Sorting
 I learned about six different sorting algorithms in week 11:
+
 **Bubble Sort Psuedocode**
 
     Bubblesort(Data: values[])
@@ -26,7 +27,7 @@ I learned about six different sorting algorithms in week 11:
     End Bubblesort  
 
 **Insertion Sort Psuedocode**
-            //
+            
 ````
 Insertionsort(Data: values[])
                     // Starting loop
