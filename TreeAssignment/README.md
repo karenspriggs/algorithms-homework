@@ -22,8 +22,11 @@ A tree organizes values in a hierarchy, using a structure called a node to hold 
 ```
 
 ## Tree Traversal
+Traversing is one of the operations that we can apply to a binary search tree, which allows us to "walk" through it and read all of its elements. There are three main ways to do so:
 
 **Pre-Order Traversal**
+
+First the root node is read, then the entire left side of the tree, then the right side.
 
 ```
 private void PostOrderTraversal(TreeNode currentNode)
@@ -39,6 +42,8 @@ private void PostOrderTraversal(TreeNode currentNode)
             Console.WriteLine(currentNode.Key);
         }
 ```
+
+First the left side of the tree is read, then the root node, then the right side.
 
 **In-Order Traversal**
 ``` private void InOrderTraversal(TreeNode currentNode)
@@ -57,6 +62,9 @@ private void PostOrderTraversal(TreeNode currentNode)
 ```
 
 **Post-Order Traversal**
+
+First the left side of the tree is read, then the right side, then the root node.
+
 ```
 private void PreOrderTraversal(TreeNode currentNode)
         {
