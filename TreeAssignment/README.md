@@ -6,7 +6,8 @@ A tree organizes values in a hierarchy, using a structure called a node to hold 
 
 
 **Node class**
-```public class TreeNode
+```
+public class TreeNode
     {
         public int Key;
         public TreeNode LeftNode;
@@ -46,7 +47,8 @@ private void PostOrderTraversal(TreeNode currentNode)
 First the left side of the tree is read, then the root node, then the right side.
 
 **In-Order Traversal**
-``` private void InOrderTraversal(TreeNode currentNode)
+``` 
+private void InOrderTraversal(TreeNode currentNode)
         {
             if (currentNode == null)
             {
