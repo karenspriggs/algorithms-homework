@@ -23,7 +23,7 @@ A tree organizes values in a hierarchy, using a structure called a node to hold 
 
 ## Tree Traversal
 
-###Pre-Order Traversal
+**Pre-Order Traversal**
 
 ```
 private void PostOrderTraversal(TreeNode currentNode)
@@ -40,7 +40,7 @@ private void PostOrderTraversal(TreeNode currentNode)
         }
 ```
 
-###In-Order Traversal
+**In-Order Traversal**
 ``` private void InOrderTraversal(TreeNode currentNode)
         {
             if (currentNode == null)
@@ -56,7 +56,7 @@ private void PostOrderTraversal(TreeNode currentNode)
         }
 ```
 
-###Post-Order Traversal
+**Post-Order Traversal**
 ```
 private void PreOrderTraversal(TreeNode currentNode)
         {
