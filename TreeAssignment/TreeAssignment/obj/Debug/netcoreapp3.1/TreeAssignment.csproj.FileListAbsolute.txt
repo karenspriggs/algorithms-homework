@@ -1,0 +1,14 @@
+C:\Users\Admin\Downloads\algorithms-homework\TreeAssignment\TreeAssignment\bin\Debug\netcoreapp3.1\TreeAssignment.exe
+C:\Users\Admin\Downloads\algorithms-homework\TreeAssignment\TreeAssignment\bin\Debug\netcoreapp3.1\TreeAssignment.deps.json
+C:\Users\Admin\Downloads\algorithms-homework\TreeAssignment\TreeAssignment\bin\Debug\netcoreapp3.1\TreeAssignment.runtimeconfig.json
+C:\Users\Admin\Downloads\algorithms-homework\TreeAssignment\TreeAssignment\bin\Debug\netcoreapp3.1\TreeAssignment.runtimeconfig.dev.json
+C:\Users\Admin\Downloads\algorithms-homework\TreeAssignment\TreeAssignment\bin\Debug\netcoreapp3.1\TreeAssignment.dll
+C:\Users\Admin\Downloads\algorithms-homework\TreeAssignment\TreeAssignment\bin\Debug\netcoreapp3.1\TreeAssignment.pdb
+C:\Users\Admin\Downloads\algorithms-homework\TreeAssignment\TreeAssignment\obj\Debug\netcoreapp3.1\TreeAssignment.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\algorithms-homework\TreeAssignment\TreeAssignment\obj\Debug\netcoreapp3.1\TreeAssignment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Downloads\algorithms-homework\TreeAssignment\TreeAssignment\obj\Debug\netcoreapp3.1\TreeAssignment.AssemblyInfoInputs.cache
+C:\Users\Admin\Downloads\algorithms-homework\TreeAssignment\TreeAssignment\obj\Debug\netcoreapp3.1\TreeAssignment.AssemblyInfo.cs
+C:\Users\Admin\Downloads\algorithms-homework\TreeAssignment\TreeAssignment\obj\Debug\netcoreapp3.1\TreeAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\algorithms-homework\TreeAssignment\TreeAssignment\obj\Debug\netcoreapp3.1\TreeAssignment.dll
+C:\Users\Admin\Downloads\algorithms-homework\TreeAssignment\TreeAssignment\obj\Debug\netcoreapp3.1\TreeAssignment.pdb
+C:\Users\Admin\Downloads\algorithms-homework\TreeAssignment\TreeAssignment\obj\Debug\netcoreapp3.1\TreeAssignment.genruntimeconfig.cache
